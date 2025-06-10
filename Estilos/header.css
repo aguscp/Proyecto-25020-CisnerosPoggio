@@ -1,0 +1,61 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #8a938e;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+
+    /*Fijo el encabezado*/
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & li{
+        list-style: none;
+        padding: 0 20px;
+    }
+
+    & a{
+        text-decoration: none;
+        font: 16px;
+        font-weight: 600;
+        color: #1a1a1a;
+        transition: 0.5 ease;
+    }
+
+    & a:hover{
+        color: #088178;
+    }
+}
+
+.cart{
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+  .navbar a {
+    font-size: 10px;
+  }
+  .navbar li {
+    padding: 0 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar a {
+    font-size: 8px;
+  }
+  .navbar li {
+    padding: 0 6px;
+  }
+}
